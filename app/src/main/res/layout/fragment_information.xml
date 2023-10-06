@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.HistoryFragment">
+    tools:context=".view.InformationFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:background="#3F51B5">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recViewSearch"
+                android:id="@+id/recViewInformation"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"

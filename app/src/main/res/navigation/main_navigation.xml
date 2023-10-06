@@ -8,15 +8,68 @@
         android:id="@+id/itemHome"
         android:name="com.example.simpelindes.view.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/actionInformationFragment"
+            app:destination="@id/informationFragment" />
+        <action
+            android:id="@+id/actionHistoryFragment"
+            app:destination="@id/HistoryFragment" />
+        <action
+            android:id="@+id/actionListLetterFragment"
+            app:destination="@id/listLetterFragment" />
+        <action
+            android:id="@+id/actionSearchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/actionStructureOrganizationFragment"
+            app:destination="@id/structureOrganizationFragment" />
+        <action
+            android:id="@+id/actionAboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/itemHistory"
+        android:id="@+id/HistoryFragment"
         android:name="com.example.simpelindes.view.HistoryFragment"
-        android:label="History"
+        android:label="Riwayat"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/itemProfile"
         android:name="com.example.simpelindes.view.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.example.simpelindes.view.InformationFragment"
+        android:label="Informasi"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/listLetterFragment"
+        android:name="com.example.simpelindes.view.ListLetterFragment"
+        android:label="Pilih Surat"
+        tools:layout="@layout/fragment_list_letter">
+        <action
+            android:id="@+id/actionLetterFragment"
+            app:destination="@id/letterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/letterFragment"
+        android:name="com.example.simpelindes.view.LetterFragment"
+        android:label="Buat Surat"
+        tools:layout="@layout/fragment_letter" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.simpelindes.view.SearchFragment"
+        android:label="Cari"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/structureOrganizationFragment"
+        android:name="com.example.simpelindes.view.StructureOrganizationFragment"
+        android:label="Struktur Organisasi"
+        tools:layout="@layout/fragment_structure_organization" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.simpelindes.view.AboutFragment"
+        android:label="Tentang Desa"
+        tools:layout="@layout/fragment_about" />
 </navigation>
